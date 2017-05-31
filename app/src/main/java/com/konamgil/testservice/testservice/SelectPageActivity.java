@@ -16,6 +16,7 @@ public class SelectPageActivity extends Activity {
     Button btnMain;
     Button btnRead;
     Button btnLast;
+    Button btnConvert;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -25,10 +26,12 @@ public class SelectPageActivity extends Activity {
         btnMain = (Button)findViewById(R.id.btnMain);
         btnRead = (Button)findViewById(R.id.btnRead);
         btnLast = (Button)findViewById(R.id.btnLast);
+        btnConvert = (Button)findViewById(R.id.btnConvert);
 
         btnMain.setOnClickListener(mOnClickListener);
         btnRead.setOnClickListener(mOnClickListener);
         btnLast.setOnClickListener(mOnClickListener);
+        btnConvert.setOnClickListener(mOnClickListener);
 
     }
 
@@ -49,6 +52,10 @@ public class SelectPageActivity extends Activity {
                     intent = new Intent(getApplicationContext(), LastKnown.class);
                     startActivity(intent);
                     break;
+                case R.id.btnConvert:
+                    intent = new Intent(getApplicationContext(), LocationConvert.class);
+                    startActivity(intent);
+
                 default:
                     break;
             }
