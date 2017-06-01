@@ -135,7 +135,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
         // Add a marker in Sydney and move the camera
         LatLng seoul = new LatLng(37.495512, 127.144127);
         mMap.addMarker(new MarkerOptions().position(seoul).title("Marker in Seoul"));

@@ -26,4 +26,16 @@
         android:layout_height="wrap_content"
         android:text="LocationConvert"
         android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btnAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LocationAlert"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btnGeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GeoCoding"
+        android:textAllCaps="false"/>
 </LinearLayout>

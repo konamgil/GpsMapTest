@@ -46,6 +46,10 @@
         </activity>
         <activity android:name=".LastKnown" />
         <activity android:name=".LocationConvert" />
+        <activity android:name=".LocationAlert" />
+        <activity android:name=".GeoCoding" />
+
+        <receiver android:name=".FishingReceiver" />
     </application>
 
 </manifest>

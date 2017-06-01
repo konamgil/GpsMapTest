@@ -17,6 +17,8 @@ public class SelectPageActivity extends Activity {
     Button btnRead;
     Button btnLast;
     Button btnConvert;
+    Button btnAlert;
+    Button btnGeo;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -27,11 +29,15 @@ public class SelectPageActivity extends Activity {
         btnRead = (Button)findViewById(R.id.btnRead);
         btnLast = (Button)findViewById(R.id.btnLast);
         btnConvert = (Button)findViewById(R.id.btnConvert);
+        btnAlert = (Button)findViewById(R.id.btnAlert);
+        btnGeo = (Button)findViewById(R.id.btnGeo);
 
         btnMain.setOnClickListener(mOnClickListener);
         btnRead.setOnClickListener(mOnClickListener);
         btnLast.setOnClickListener(mOnClickListener);
         btnConvert.setOnClickListener(mOnClickListener);
+        btnAlert.setOnClickListener(mOnClickListener);
+        btnGeo.setOnClickListener(mOnClickListener);
 
     }
 
@@ -55,7 +61,15 @@ public class SelectPageActivity extends Activity {
                 case R.id.btnConvert:
                     intent = new Intent(getApplicationContext(), LocationConvert.class);
                     startActivity(intent);
-
+                    break;
+                case R.id.btnAlert:
+                    intent = new Intent(getApplicationContext(), LocationAlert.class);
+                    startActivity(intent);
+                    break;
+                case R.id.btnGeo:
+                    intent = new Intent(getApplicationContext(), GeoCoding.class);
+                    startActivity(intent);
+                    break;
                 default:
                     break;
             }

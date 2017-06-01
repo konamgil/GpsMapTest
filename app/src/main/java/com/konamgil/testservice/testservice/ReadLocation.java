@@ -40,6 +40,7 @@ public class ReadLocation extends Activity {
         mResult = (TextView) findViewById(R.id.result);
         mProvider = mLocMan.getBestProvider(new Criteria(), true);
         mLocMan.requestLocationUpdates(mProvider, 3000, 10, mListener);
+//        mLocMan.requestLocationUpdates(mProvider, 3000, 10, mListener);
         mStatus.setText("현재 상태 : 서비스 시작");
     }
 
